@@ -31,3 +31,15 @@ setInterval(()=>{
     }
     showSlide();
 },4000);
+
+
+const emailBtn = document.querySelector(".floating-btn.email");
+
+if (emailBtn) {
+    const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+    if (isMobile) {
+        emailBtn.href = "mailto:cerraajerosbogotanorte@gmail.com?subject=Solicitud%20de%20servicio";
+    } else {
+        emailBtn.href = "https://mail.google.com/mail/?view=cm&fs=1&to=cerraajerosbogotanorte@gmail.com&su=Solicitud%20de%20servicio";
+    }
+}
