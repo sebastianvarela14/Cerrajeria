@@ -745,8 +745,11 @@ RESPONSIVE - CELULARES
         gap:15px;
     }
     .hero{
-        min-height:50vh;
-        padding:170px 20px 50px;
+        min-height:100vh;
+        padding-top:110px;
+        padding-right:20px;
+        padding-bottom:50px;
+        padding-left:20px;
     }
     .hero-content h1{
         font-size:30px;
