@@ -136,6 +136,7 @@ header{
 
 .hero{
     height:100vh;
+    min-height:700px;
     background:url(img/hero.jpg);
     background-size:cover;
     background-position:center;
@@ -146,18 +147,18 @@ header{
     text-align:center;
 }
 
-.overlay{
-    position:absolute;
-    inset:0;
-    background:linear-gradient(rgba(10,15,30,.75),rgba(10,15,30,.75));
-}
-
 .hero-content{
     position:relative;
     z-index:5;
     color:white;
     width:90%;
     max-width:850px;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(rgba(10,15,30,.75),rgba(10,15,30,.75));
 }
 
 .hero-content h1{
@@ -206,6 +207,25 @@ header{
 .btn-secondary:hover{
     background:white;
     color:var(--primary);
+}
+
+/* =========================
+   IMAGEN DEL HERO
+========================= */
+
+.img_hero{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:540px;
+    width:200px;
+    z-index:5;
+}
+
+.img_hero img{
+    width:100%;
+    height:auto;
+    object-fit:contain;
 }
 
 /* ===========================
@@ -815,6 +835,10 @@ RESPONSIVE - CELULARES
     .hero-content p{
         font-size:16px;
         line-height:1.7;
+    }
+    .img_hero{
+        width:210px;
+        top:430px;
     }
     /* ================= SECCIONES ================= */
     section{
