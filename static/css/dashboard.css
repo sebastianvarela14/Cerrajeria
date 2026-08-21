@@ -135,7 +135,7 @@ header{
 =========================== */
 
 .hero{
-    height:100vh;
+    height:115vh;
     min-height:700px;
     background:url(img/hero.jpg);
     background-size:cover;
@@ -218,7 +218,7 @@ header{
     left:50%;
     transform:translateX(-50%);
     top:540px;
-    width:200px;
+    width:260px;
     z-index:5;
 }
 
@@ -838,7 +838,7 @@ RESPONSIVE - CELULARES
     }
     .img_hero{
         width:210px;
-        top:430px;
+        top:480px;
     }
     /* ================= SECCIONES ================= */
     section{
