@@ -135,36 +135,44 @@ header{
 =========================== */
 
 .hero{
-    height:115vh;
-    min-height:700px;
+    min-height:100vh;
     background:url(img/hero.jpg);
     background-size:cover;
     background-position:center;
     position:relative;
     display:flex;
-    justify-content:center;
+    flex-direction:column;
     align-items:center;
+    justify-content:flex-start;
     text-align:center;
+    padding:150px 20px 80px;
 }
 
 .hero-content{
     position:relative;
     z-index:5;
-    color:white;
-    width:90%;
+    width:100%;
     max-width:850px;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    flex-shrink:0;
 }
 
 .overlay{
     position:absolute;
     inset:0;
-    background:linear-gradient(rgba(10,15,30,.75),rgba(10,15,30,.75));
+    background:linear-gradient(
+        rgba(10,15,30,.75),
+        rgba(10,15,30,.75)
+    );
 }
 
 .hero-content h1{
     font-size:65px;
-    margin-bottom:100px;
     line-height:1.15;
+    margin:0 0 30px;
     animation:fadeDown 1s;
 }
 
@@ -172,7 +180,8 @@ header{
     font-size:20px;
     color:#ddd;
     line-height:1.8;
-    margin-bottom:40px;
+    margin:0;
+    max-width:850px;
 }
 
 .hero-buttons{
@@ -214,17 +223,20 @@ header{
 ========================= */
 
 .img_hero{
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    top:540px;
+    position:relative;
     width:260px;
+    max-width:70vw;
+    margin-top:35px;
+    margin-left:auto;
+    margin-right:auto;
     z-index:5;
+    flex-shrink:0;
 }
 
 .img_hero img{
     width:100%;
     height:auto;
+    display:block;
     object-fit:contain;
 }
 
@@ -819,9 +831,9 @@ RESPONSIVE - CELULARES
     }
     /* ================= HERO ================= */
     .hero{
-        min-height:72vh;
+        min-height:90vh;
         height:auto;
-        padding:210px 20px 60px;
+        padding:150px 20px 60px;
     }
     .hero-content{
         width:100%;
@@ -835,10 +847,12 @@ RESPONSIVE - CELULARES
     .hero-content p{
         font-size:16px;
         line-height:1.7;
+        margin:0;
     }
     .img_hero{
         width:210px;
-        top:480px;
+        max-width:70vw;
+        margin-top:30px;
     }
     /* ================= SECCIONES ================= */
     section{
