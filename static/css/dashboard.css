@@ -136,7 +136,7 @@ header{
 
 .hero{
     min-height:100vh;
-    background:url(img/hero.jpg);
+    background:url(../img/img_hero.jpeg);
     background-size:cover;
     background-position:center;
     position:relative;
@@ -216,28 +216,6 @@ header{
 .btn-secondary:hover{
     background:white;
     color:var(--primary);
-}
-
-/* =========================
-   IMAGEN DEL HERO
-========================= */
-
-.img_hero{
-    position:relative;
-    width:260px;
-    max-width:70vw;
-    margin-top:35px;
-    margin-left:auto;
-    margin-right:auto;
-    z-index:5;
-    flex-shrink:0;
-}
-
-.img_hero img{
-    width:100%;
-    height:auto;
-    display:block;
-    object-fit:contain;
 }
 
 /* ===========================
@@ -848,11 +826,6 @@ RESPONSIVE - CELULARES
         font-size:16px;
         line-height:1.7;
         margin:0;
-    }
-    .img_hero{
-        width:210px;
-        max-width:70vw;
-        margin-top:30px;
     }
     /* ================= SECCIONES ================= */
     section{
